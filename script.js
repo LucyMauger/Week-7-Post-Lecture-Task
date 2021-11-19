@@ -38,7 +38,7 @@
         return "This is existing paragraph " + d;
     })
     .enter()
-    .append("div").style("color","orange")
+    .append("p").style("color","orange")
     .text(function(d){
         return "This is appended paragraph " + d;
     })
