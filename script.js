@@ -43,3 +43,12 @@
     })
 
 //                              TASK 3
+// Create three rectangles using SVG
+
+    d3.select("body")
+    .selectAll("rect")
+    .data([1,2,3])
+    .append("rect")
+    .style("fill","red")
+    .attr("width",20)
+    .attr("height",10)
