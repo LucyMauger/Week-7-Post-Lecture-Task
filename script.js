@@ -46,7 +46,7 @@
 //                              TASK 3
 // Create three rectangles using SVG
 
-    d3.select("body")
+    d3.select("svg")
     .selectAll("rect")
     .style("fill","red")
     .attr("width",20)
