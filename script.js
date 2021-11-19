@@ -33,12 +33,12 @@
     d3.select("body")
     .select(".task2").style("color","purple")
     .data([1,2,3,4,5,6])
-    .text(function (d){
+    .text(function (d,i){
         return "This is existing paragraph " + d;
     })
     .enter()
     .append("p")
-    .text(function (d){
+    .text(function (d,i){
         return "This is a new appended paragraph " + d;
     })
     
