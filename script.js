@@ -23,11 +23,6 @@
     d3.csv("films.csv").then(function(data){
         data.forEach(d => {d.H=+d.Height;});
         console.log(data)
-    })
-    .select("body")
-    .selectAll(".task1c").style("color","green")
-    .text(function(d){
-        return d
     });
 
 //                              TASK 2
