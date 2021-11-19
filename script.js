@@ -49,5 +49,5 @@
     d3.select("svg")
     .selectAll("rect")
     .style("fill","red")
-    .attr("width",20)
-    .attr("height",10)
+    .attr("width",100)
+    .attr("height",50)
