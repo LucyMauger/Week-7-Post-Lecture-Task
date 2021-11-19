@@ -41,7 +41,7 @@
     .append("p").style("color","orange")
     .text(function(d){
         return "This is appended paragraph " + d;
-    })
+    });
 
 //                              TASK 3
 // Create three rectangles using SVG
