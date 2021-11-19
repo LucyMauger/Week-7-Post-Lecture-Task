@@ -31,6 +31,7 @@
     // Change the text of the 1st three paragraphs and append p text for the remaining data values
 
     d3.select("body")
+    .select(".task2div")
     .selectAll(".task2").style("color","purple")
     .data([1,2,3,4,5,6])
     .text(function(d){
@@ -47,8 +48,6 @@
 
     d3.select("body")
     .selectAll("rect")
-    .data([1,2,3])
-    .append("rect")
     .style("fill","red")
     .attr("width",20)
     .attr("height",10)
