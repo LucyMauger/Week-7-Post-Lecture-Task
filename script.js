@@ -1,4 +1,4 @@
-//                              TASK 1
+ //                              TASK 1
 // Use data in three ways:
 
     // Data values assigned to d3.data() methods
@@ -23,7 +23,7 @@
     d3.csv("films.csv").then(function(data){
         data.forEach(d => {d.H=+d.Height;});
         console.log(data)
-
+    })
 
 //                              TASK 2
 // Use the enter() function to enter data values:
@@ -31,14 +31,13 @@
     // Change the text of the 1st three paragraphs and append p text for the remaining data values
 
     d3.select("body")
-    .select(".task2").style("color","purple")
+    .selectAll(".task2").style("color","purple")
     .data([1,2,3,4,5,6])
-    .text(function (d,i){
+    .text(function (d){
         return "This is existing paragraph " + d;
     })
     .enter()
-    .append("p")
-    .text(function (d,i){
-        return "This is a new appended paragraph " + d;
+    .append("p").style("color","orange")
+    .text(function (d){
+        return "This is appended paragraph " + d;
     })
-    
