@@ -1,4 +1,4 @@
- //                              TASK 1
+//                              TASK 1
 // Use data in three ways:
 
     // Data values assigned to d3.data() methods
@@ -28,7 +28,7 @@
     .selectAll(".task1c").style("color","green")
     .text(function(d){
         return d
-    })
+    });
 
 //                              TASK 2
 // Use the enter() function to enter data values:
@@ -46,3 +46,5 @@
     .text(function(d){
         return "This is appended paragraph " + d;
     })
+
+//                              TASK 3
